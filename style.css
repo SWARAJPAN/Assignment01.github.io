@@ -1,0 +1,481 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+li, a{
+	font-family: sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	color: white;
+	text-decoration: none;
+}
+
+#head{
+	overflow: hidden;
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 8% 30px;
+	width: 100%;
+	background-color: darkslategray;
+	transition: 0.4s;
+	top: 0;
+	z-index: 99;
+}
+
+.logo{
+	cursor: pointer;
+	padding: 5px;
+	transition: 0.4s;
+
+	font-weight: bold;
+}
+
+.navlinks{
+	list-style: none;
+	transition: 0.4s;
+}
+
+.navlinks li{
+	display: inline-block;
+	padding: 0px 20px;
+}
+.navlinks li a{
+	transition: all 0.3s ease 0s;
+}
+.navlinks li a:hover{
+	color: greenyellow;
+} 
+
+
+/*NAV HIGHLIGHTS ON SCROLL*/
+
+nav .navlinks ul li.active {
+	background-color: yellowgreen;
+	transition: 0.3 ease 0s background-color ;
+	padding:20px;
+	border-radius: 50%;
+}
+
+
+.avatar{
+	padding: 20px 10px;
+}
+
+.portfolio{
+	align-items: center;
+	text-align: center;
+	color: whitesmoke;
+	padding: 20px;
+	padding-top: 130px;
+	padding-bottom: 60px;
+	text-decoration: none;
+	font-size: 30px;
+	background-color: darkslategray;
+	bg
+
+}
+
+
+.about{
+	color: brown;
+	padding: 25px 6% 25px;
+	background-color: burlywood;
+	flex: 50%;
+	width: 100%;
+	font-size: 1.8vw;
+	background-size: contain;
+	align-items: center;
+	justify-content: center;
+}
+
+.about h3{
+	color: darkslategray;
+	text-align: left;
+	padding-top: 20px;
+	font-size: 2.6vw;
+}
+
+.about p{
+	color: blanchedalmond;
+	text-align: left;
+	font-size: 1.4vw;
+	padding-top: 30px;
+
+}
+
+#location{
+	display: flex;
+	width: 50vw;
+	padding: 20px;
+}
+
+.stay{
+	display: flex;
+	background-color: burlywood;
+}
+
+.art{
+	background-image: url('image/clouds.jpeg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	padding: 80px;
+	padding-bottom: 0;
+	width: 100%;
+	text-align: center;
+	align-items: center;
+	color: chocolate;
+	font-size: 25px;
+}
+#city{
+	background: transparent;
+	fill: none;
+	padding-top: 60px;
+	width: 60vw;
+}
+
+.row{
+	display: flex;
+	padding: 50px;
+	background-color: navajowhite;
+}
+
+#cam{
+	width: 35vw;
+	padding-left: 40px;
+}
+
+.hobby{
+	flex: 50%;
+	padding-top: 50px;
+	background-color: navajowhite;
+	width: 100%;
+	height: 100%;
+	color: darksalmon;
+	font-size: 30px;
+}
+
+
+.footer{
+	background-color: darkslategray;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	padding: 30px;
+	color: whitesmoke;
+	font-weight: 20px;
+	text-transform: uppercase;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  border-radius: 15px;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 17px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+input[type=submit]:hover {
+  background-color: darkslategray;
+}
+
+/* Style the container/contact section */
+
+#myVid{
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	position: fixed;
+	text-align: center;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	overflow: hidden;
+	
+	z-index: -1;
+}
+
+.contact {
+  
+  padding-bottom: 30px;
+  padding-top: 50px;
+  color: whitesmoke;
+  font-size: 20px;
+  
+}
+
+/* Create two columns that float next to eachother */
+.fill {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.form:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide,
+make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+  .contact{
+  width: 100%;
+    margin-top: 0;	
+  }
+}
+
+@media screen and (max-width: 580px) {
+	#head {
+		padding: 20px 10px !important;
+	}
+	#head a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	.navlinks {
+		float: none;
+	}
+}
+
+/* Image Slider */
+#carousel{
+	background-color: #aebfb6;
+}
+
+
+.slideshow{
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+	padding-top: 20px;
+
+
+}
+
+.slideFade{
+	display: none;
+}
+
+.prev, .next{
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: indianred;
+	font-size: 18px;
+	font-weight: bold;
+	transition: 0.4s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+.next{
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover{
+	background-color: lightgoldenrodyellow;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: whitesmoke;
+  opacity: 0.5;
+}
+.numtext {
+  color: whitesmoke;
+  font-size: 12px;
+  padding: 30px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: lightblue;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.4s ease;
+}
+
+.active, .dot:hover{
+	background-color: whitesmoke;
+}
+.fade{
+	animation-name: fade;
+	animation-duration: 0.5s;
+}
+@keyframes fade{
+	from {opacity: .4}
+	to {opacity: 1}
+}
+
+/*MODAL IMAGE*/
+
+.container{
+	position: relative;
+	min-height: 60vh;
+
+}
+
+.container .image-container{
+	display: flex;
+	flex-wrap: wrap;
+	gap:  15px;
+	justify-content: center;
+	padding: 10px;
+}
+
+.container .image-container .image{
+	height: 250px;
+	width: 350px;
+	border: 10px solid whitesmoke;
+	border-radius: 5px;
+	box-shadow: 0 5px 15px black;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.container .image-container .image img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	transition: .2s linear;
+	border-radius: 5px;
+}
+
+.container .image-container .image:hover img{
+	transform: scale(1.2);
+}
+
+.container .popup-image{
+	position: fixed;
+	top: 0;
+	left: 0 ;
+	background: rgba(0, 0, 0, .9);
+	height: 100%;
+	width: 100%;
+	z-index: 100;
+	display: none;
+}
+
+.container .popup-image span{
+	position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 60px;
+	font-weight: bolder;
+	color: white;
+	cursor: pointer;
+	z-index: 100;
+}
+
+.container .popup-image img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 5px solid white;
+	width: 750px;
+	object-fit: cover;
+}
+
+@media (max-width: 768px){
+	.container .popup-image img{
+		width: 95%;
+	}
+}
+
+/*MAKING MULTIPLE COLOUMN LAYOUT*/
+/*Side by Side coloums*/
+
+.language {
+  float: center;
+  width: 20%;
+  padding: 0 10px;
+  border-radius: 30%;
+  align-items: center;
+	justify-items: center;
+	text-align: center;
+
+
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.cards {
+	display: flex;
+	padding: 0px 8% 40px;
+	align-items: center;
+	justify-items: center;
+
+}
+
+/* Clear floats after the columns */
+.cards:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  align-items: center;
+	justify-items: center;
+	text-align: center;
+
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .language {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}

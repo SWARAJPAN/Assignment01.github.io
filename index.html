@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+	<title>
+		Assignment1
+	</title>
+    <link rel="icon" type="image/x-icon" href="image/icon.svg">
+</head>
+<body>
+	<!--Navbar-->
+    <header id="head">
+    <img id="lemon" class="logo" src="image/lemon.svg" alt="logo">
+    <nav>
+        
+        <div class="navlinks">       
+            <ul>
+                <li class="home1 active"><a href="#port">HOME</a></li>
+                <li class="about2 "><a href="#about2">ABOUT</a></li>
+                <li class="hobby2"><a href="#art">ART</a></li>
+                <li class="contact2"><a href="#contct">CONTACT</a></li>
+                <li><a href="#">&#9432;</a></li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+
+    <!--Portfolio-->
+    <section id="home1">
+        <div class="portfolio" id="port"> 
+
+        <img class="avatar" src="image/maleavatar.svg" alt="avatar" height="400" width="400"> 
+            <h3>Swaraj Panthi</h3>
+            <p>Welcome to my Porfolio!</p>
+        </div>
+    </section>
+
+    <!--About-->
+    <section id="about2">
+        <div class="stay">
+        
+            <div class="about" >
+                <h1>Where am I from?</h1>
+                <h3><span><img src="image/locicon.svg" alt="icon" height="35" width="35"></span>    Meghalaya, India</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+                <div class="about">
+                    <img id="location" src="image/navigator.svg" alt="location">
+                </div>
+        </div>
+    </section>
+
+    <!--BGIMAGE-->
+    <section id="artsec">
+        <div class="art">
+            <h2>It's always beautiful to look up here!</h2>
+            <img id="city" src="image/city.svg" alt="city">
+
+        </div>
+    </section>
+
+    <!--HOBBIES-->
+    <section id="hobby2">
+        <div id="art" class="row">
+        <div class="hobby">
+            <img id="cam" src="image/camera.svg" alt="camera">
+            <h1 style="text-align: center; padding-top: 30px;">Click on the pictures!</h1>
+        </div>
+
+        <div class="hobby">
+            
+            <div class="container">
+                <div class="image-container">
+                    <div class="image"><img src="image/modal0.jpeg"></div>
+                    <div class="image"><img src="image/modal2.jpeg"></div>
+                    <div class="image"><img src="image/modal3.jpg"></div>
+                    <div class="image"><img src="image/modal4.jpg"></div>
+                    <div class="image"><img src="image/modal5.jpeg"></div>
+                    <div class="image"><img src="image/modal6.jpg"></div>
+                </div>
+                <div class="popup-image">
+                    <span>&times;</span>
+                    <img src="image/modal0.jpeg">
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <!--Carousel-->
+    <section id="carousel">
+    <div class="slideshow">
+
+        
+
+        <div class="slideFade fade" style="display: block;">
+            <div class="numtext">1 / 3</div>
+            <img src="image/img1.jpg" style="width:100%">
+            <div class="text">Stock Photo 1</div>
+        </div>
+
+        <div class="slideFade fade">
+            <div class="numtext">2 / 3</div>
+            <img src="image/img2.jpg" style="width:100%">
+            <div class="text">Stock Photo 2</div>
+        </div>
+
+        <div class="slideFade fade">
+            <div class="numtext">3 / 3</div>
+            <img src="image/img3.jpg" style="width:100%">
+            <div class="text">Stock Photo 3</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+
+    <div style="text-align:center;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    </section>
+
+    
+
+    <section>
+        <div>
+            <h1 style="text-align: center; padding: 40px; color: white; font-size: 30px; text-shadow: 2px 2px 5px blueviolet;">Languages used..</h1>
+        </div>
+      
+        <div class="cards">
+                <div>
+                 <h1 style="text-align: center; padding: 40px; color: white; font-size: 30px; opacity: 0;">Languages used..</h1>
+                </div>
+            
+            <div class="language">
+               
+                <div class="card">
+                    <img src="image/html.svg" height="80px" width="80px">
+                    <h2>HTML</h2>
+                </div>
+            </div>
+            <div class="language">
+                <div class="card">
+                    <img src="image/css.svg" height="80px" width="80px">
+                    <h2>CSS</h2>
+                </div>
+            </div>
+            <div class="language">
+                <div class="card">
+                    <img src="image/js.svg" height="80px" width="80px" >
+                    <h2>JavaScript</h2>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!--CONTACT-->
+
+    <section id="contact2">
+
+        <div class="contact" id="contct">
+
+            <video autoplay muted loop id="myVid">
+            <source src="video/green.mp4" type="video/mp4">
+            </video>
+
+            <div style="text-align: center; text-shadow: 2px 2px 5px blueviolet;">
+                <h2>Contact me!</h2>
+            </div>
+            <div class="form">
+                <div class="fill">
+                    <img src="image/cabin.svg" height="660" style="width:100%">
+                </div>
+                <div class="fill">
+                    <form>
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        <label for="country">Country</label>
+                        <input type="text" name="country" placeholder="Your country..">
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                        <input type="submit" value="Submit">
+
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        
+        <h3>FOO<span><img src="image/foot.svg" alt="icon" height="35" width="35"></span>TER</h3>
+
+    </footer>
+
+    
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>
